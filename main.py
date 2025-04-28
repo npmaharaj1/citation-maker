@@ -2,8 +2,7 @@ import requests
 import json
 
 def main():
-    # jsondata = dict(json.loads(requests.get(input("Insert URL: ")).content)["message"])
-    jsondata = dict(json.loads(requests.get("https://api.crossref.org/works/10.21608/mfth.2017.26074").content)["message"])
+    jsondata = dict(json.loads(requests.get(input("Insert URL: ")).content)["message"])
 
     # Get Author
     author = dict(jsondata["author"][0])
